@@ -13,6 +13,9 @@ RUN apt-get install -y gnupg2
 # wgetインストール
 RUN apt-get install -y wget
 
+#curlインストール
+RUN apt-get install -y curl
+
 # mongoshインストール
 RUN wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
 RUN echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-5.0.list
